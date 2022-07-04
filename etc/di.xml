@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Soft Commerce Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="SoftCommerce\PlentyItemProfile\Model\ItemImportService\Processor\Category">
+        <plugin name="plenty-item-import-category-processor" type="SoftCommerce\PlentyScommerceCanonical\Plugin\ItemImportService\CategoryProcessorPlugin" sortOrder="1"/>
+    </type>
+</config>

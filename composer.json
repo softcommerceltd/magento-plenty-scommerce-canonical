@@ -1,0 +1,21 @@
+{
+    "name": "softcommerce/module-plenty-scommerce-canonical",
+    "description": "SoftCommerce -- PlentyMarkets - Scommerce Canonical Module.",
+    "require": {
+        "php": "~7.3.0||~7.4.0||~8.0.0||~8.1.0",
+        "amasty/rewards": "*",
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "license": [
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SoftCommerce\\PlentyScommerceCanonical\\": ""
+        }
+    },
+    "version": "1.0.0"
+}
