@@ -1,5 +1,8 @@
 ## Changelog
 
+### Version 1.0.2
+- **Compatibility**: Remove dependency `scommerce/canonical` from composer.json
+
 ### Version 1.0.1
 - **Fix**: Added a fix to composer.json dependency.
 

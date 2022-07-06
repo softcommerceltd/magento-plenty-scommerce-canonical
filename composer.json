@@ -3,7 +3,6 @@
     "description": "SoftCommerce -- PlentyMarkets - Scommerce Canonical Module.",
     "require": {
         "php": "~7.3.0||~7.4.0||~8.0.0||~8.1.0",
-        "scommerce/canonical": "*",
         "magento/magento-composer-installer": "*"
     },
     "type": "magento2-module",
@@ -17,5 +16,5 @@
             "SoftCommerce\\PlentyScommerceCanonical\\": ""
         }
     },
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
