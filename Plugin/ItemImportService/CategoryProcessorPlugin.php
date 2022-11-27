@@ -30,22 +30,22 @@ class CategoryProcessorPlugin
     /**
      * @var CategoryManagementInterface
      */
-    private $categoryManagement;
+    private CategoryManagementInterface $categoryManagement;
 
     /**
      * @var CategoryTreeManagementInterface
      */
-    private $categoryTreeManagement;
+    private CategoryTreeManagementInterface $categoryTreeManagement;
 
     /**
      * @var ResourceModel\Category
      */
-    private $resource;
+    private ResourceModel\Category $resource;
 
     /**
-     * @var Category
+     * @var Category|null
      */
-    private $subject;
+    private ?Category $subject = null;
 
     /**
      * @param CategoryTreeManagementInterface $categoryTreeManagement
