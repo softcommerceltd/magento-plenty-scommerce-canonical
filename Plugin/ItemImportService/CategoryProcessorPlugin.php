@@ -20,27 +20,12 @@ use SoftCommerce\PlentyProfile\Model\Config\StoreConfigInterface;
 /**
  * @inheritdoc
  * Class CategoryProcessorPlugin used to intersect
- * category import process in order to
+ * category import process to
  * provide data for attribute: "product_primary_category".
  */
 class CategoryProcessorPlugin
 {
     private const TARGET_ATTRIBUTE = 'product_primary_category';
-
-    /**
-     * @var CategoryManagementInterface
-     */
-    private CategoryManagementInterface $categoryManagement;
-
-    /**
-     * @var CategoryTreeManagementInterface
-     */
-    private CategoryTreeManagementInterface $categoryTreeManagement;
-
-    /**
-     * @var ResourceModel\Category
-     */
-    private ResourceModel\Category $resource;
 
     /**
      * @var Category|null
@@ -53,14 +38,10 @@ class CategoryProcessorPlugin
      * @param ResourceModel\Category $resource
      */
     public function __construct(
-        CategoryTreeManagementInterface $categoryTreeManagement,
-        CategoryManagementInterface $categoryManagement,
-        ResourceModel\Category $resource
-    ) {
-        $this->categoryTreeManagement = $categoryTreeManagement;
-        $this->categoryManagement = $categoryManagement;
-        $this->resource = $resource;
-    }
+        private readonly CategoryTreeManagementInterface $categoryTreeManagement,
+        private readonly CategoryManagementInterface $categoryManagement,
+        private readonly ResourceModel\Category $resource
+    ) {}
 
     /**
      * @param Category $subject

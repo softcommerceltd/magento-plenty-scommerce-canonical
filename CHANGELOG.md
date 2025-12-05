@@ -1,5 +1,9 @@
 ## Changelog
 
+### Version 1.1.0
+- **Enhancement**: Apply constructor property promotion to CategoryProcessorPlugin
+- **Compatibility**: Update PHP version requirement to 8.1, 8.2, 8.3, and 8.4
+
 ### Version 1.0.3
 - **Compatibility**: Compatibility with Magento [OS/AC] 2.4.5 and PHP 8
 
